@@ -1,0 +1,198 @@
+﻿/* Sayfanın genel arka plan ayarları */
+body {
+    background-color: #e0e0e0; /* Yedek arka plan rengi */
+    margin: 0;
+    background-image: url('/background.jpg'); /* Arka plan resmi */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh; /* Sayfa tam ekran yüksekliğinde olsun */
+    display: flex;
+    justify-content: center; /* YATAY ortala */
+    align-items: start; /* Yukarıdan başla */
+    padding-top: 40px;
+    font-family: Arial, sans-serif; /* Genel yazı tipi */
+}
+
+
+/* Sayfa içeriğini ortalayan, kart gibi görünen container */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #FFECE0 ; /* Açık turuncu tonlu arkaplan */
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Form içindeki açıklama yazılarını siyah yap */
+form p, .container p {
+    color: #222; /* Koyu siyah tonu */
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+/* Üst bar (başlık ve çıkış butonu) */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Başlık renk ayarı */
+h1, h2 {
+    color: #222;
+}
+
+/* Sekme (tab) butonları */
+.tabs {
+    margin: 20px 0;
+}
+
+.tabs button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #84DB83; /* Yeşil buton */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tabs button:hover {
+    background-color: #6DC06C ; /* Hover rengi */
+}
+
+/* Çıkış yap butonu */
+.logout-btn {
+    background-color: #ff8a79; /* Turuncu ton */
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background-color: #ff7159;
+}
+
+/* Form genel ayarları */
+form {
+    margin-bottom: 20px;
+}
+
+/* Tarih input ayarları */
+input[type="date"] {
+    color: #333;
+    background-color: #fff8f3;
+}
+
+/* Takvim ikonu görünür olsun */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0);
+    cursor: pointer;
+    background-color: #ffcbac; /* İkonun arka plan rengi */
+}
+
+/* Tüm input alanları için temel stil */
+form input {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff8f3;
+    color: #333;
+}
+
+/* Placeholder yazı stili */
+form input::placeholder {
+    color: #888;
+}
+
+/* Form butonları */
+form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #94B5DE; /* Açık mavi buton */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #5e99c1;
+}
+
+/* Arama formu özel düzeni */
+.search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-form input {
+    flex: 1; /* Inputlar eşit genişlikte olsun */
+}
+
+/* Arkadaş listesi */
+.friend-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Her bir arkadaş kartı */
+.friend-list li {
+    background-color: #fff8f3;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+}
+
+/* Yaklaşan doğum günü olan arkadaşların stili */
+.friend-list li.upcoming {
+    background-color: #ffcbac;
+    font-weight: bold;
+}
+
+/* Liste içindeki güncelle / sil butonları */
+.friend-list li button {
+    margin-left: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    background-color: #94b5de;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.friend-list li button:hover {
+    background-color: #5e99c1;
+}
+
+/* Arkadaş satırı düzeni */
+.friend-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Butonlar arası boşluk */
+.button-group {
+    display: flex;
+    gap: 8px;
+}

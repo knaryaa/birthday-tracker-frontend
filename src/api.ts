@@ -1,0 +1,1 @@
+﻿export const API_BASE_URL = 'https://birthday-tracker-backend.onrender.com';
